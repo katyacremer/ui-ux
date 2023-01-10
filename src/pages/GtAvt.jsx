@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../components/styles/index.css'
 
-const GitAvatar = () => {
+const GtAvt = () => {
     const [username, setUsername] = useState("");
     const [userAvatarUrl, setUserAvatarUrl] = useState(null);
 
@@ -20,18 +20,18 @@ const GitAvatar = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <h1 className="text">Использование GitHub API</h1><br/>
+                <h1 className="text">Using GitHub API</h1><br/>
                 <div> {userAvatarUrl ?
                     <img src={userAvatarUrl} alt="*"/> :
-                    <div><p className="text">Пока пусто :(</p></div>
+                    <div><p className="text">While empty :(</p></div>
                 }</div>
                 <br/>
                 <label htmlFor="name" className="text">Username: </label>
                 <input value={username} onChange={handleUsernameInput}/>
-                <button type="submit">Получить аватар</button>
+                <button type="submit">Get author</button>
             </form>
         </div>
     )
 }
 
-export default GitAvatar;
+export default GtAvt;
