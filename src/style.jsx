@@ -1,9 +1,9 @@
 import './components/styles/index.css'
-import Navbar from './components/Navbar';
-import ButtonList from './components/ButtonList';
+import navbar from './components/navbar';
+import list from './components/list';
 import { Outlet } from 'react-router-dom';
 
-const Layout = ({children}) => {
+const style = ({children}) => {
     return (
         <div className="root">
             <Navbar/>
@@ -16,4 +16,4 @@ const Layout = ({children}) => {
     )
 }
 
-export default Layout;
+export default style;
