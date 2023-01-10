@@ -1,0 +1,50 @@
+.navbar_tab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  
+    padding-left: 3%;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #CC92FA;
+  }
+
+  .navbar_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+  }
+
+  .button_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  
+    height: 100%;
+    margin: 2%;
+  }
+  
+  .button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+  
+    background: #FFFFFF;
+    border: 0px solid #ffffff;
+    border-radius: 8px;
+  }
+  
+  .button:hover {
+    background: #eae1e1;
+  }
