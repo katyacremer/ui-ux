@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components/styles/index.css'
+import '../styles/index.css'
 
 const GtAvt = () => {
     const [username, setUsername] = useState("");
