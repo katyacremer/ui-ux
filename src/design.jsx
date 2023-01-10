@@ -1,13 +1,13 @@
-import './components/styles/index.css'
+import './styles/index.css'
 import navbar from './components/navbar';
 import list from './components/list';
 import { Outlet } from 'react-router-dom';
 
-const style = ({children}) => {
+const design = ({children}) => {
     return (
         <div className="root">
-            <Navbar/>
-            <ButtonList/>
+            <navbar/>
+            <list/>
             <main className={"main"}>
                 {children}
                 <Outlet/>
@@ -16,4 +16,4 @@ const style = ({children}) => {
     )
 }
 
-export default style;
+export default design;
