@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../components/styles/counter.css'
 
-const Counter = () => {
+const counter = () => {
     const [count, setCount] = useState(0);
   
     const handleIncrement = () => {
@@ -14,7 +14,7 @@ const Counter = () => {
 
     return (
         <div className={"counter_background"}>
-          <p className={"counter_text"}>Счётчик</p>
+          <p className={"counter_text"}>Counter</p>
             <p className={"counter_text"}>{count}</p>
             <div className={"button_container"}>
               <button className={"counter_button"} onClick={handleDecrement}>-</button>
@@ -24,4 +24,4 @@ const Counter = () => {
     )
 }
 
-export default Counter;
+export default counter;
